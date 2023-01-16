@@ -1,0 +1,26 @@
+{
+        "AKDsMoreRelics:StunGrenadePower": {
+            "NAME": "闪光弹",
+           "DESCRIPTIONS": ["敌人的攻击伤害降至 #b0 。"]
+        },
+        "AKDsMoreRelics:JokerPower": {
+                "NAME": "鬼牌",
+                "DESCRIPTIONS": ["你的下一张牌将被打出 #b2 次。"]
+        },
+        "AKDsMoreRelics:GoldenLancePower": {
+                "NAME": "黄金骑枪",
+                "DESCRIPTIONS": ["你造成的攻击伤害翻倍。"]
+        },
+        "AKDsMoreRelics:DeathReaperPower": {
+                "NAME": "死神镰刀",
+                "DESCRIPTIONS": ["此敌人受到的攻击伤害变为 #b120% 。"]
+        },
+        "AKDsMoreRelics:HeartChainPower": {
+                "NAME": "生命锁链",
+                "DESCRIPTIONS": ["回合结束时失去 #b", " 点生命。"]
+        },
+        "AKDsMoreRelics:MedievalHelmetPower": {
+                "NAME": "中世纪头盔",
+                "DESCRIPTIONS": ["你造成的攻击伤害降低 #b50% ，造成伤害时你获得等同于 #y未被格挡 伤害的 #y格挡 。"]
+        }
+}

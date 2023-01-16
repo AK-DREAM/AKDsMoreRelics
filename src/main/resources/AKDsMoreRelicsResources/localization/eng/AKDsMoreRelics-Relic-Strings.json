@@ -1,0 +1,490 @@
+{
+  "AKDsMoreRelics:StunGrenade": {
+    "NAME": "Stun Grenade",
+    "FLAVOR": "Surprise!",
+    "DESCRIPTIONS": [
+      "Enemies do no damage at the first turn every combat."
+    ]
+  },
+  "AKDsMoreRelics:HugeHammer": {
+    "NAME": "Huge Hammer",
+    "FLAVOR": "This is not an inflatable hammer!",
+    "DESCRIPTIONS": [
+      "Once every combat, if you deal at least #b150 #yunblocked damage within one turn , #ystun ALL enemies this turn."
+    ]
+  },
+  "AKDsMoreRelics:SoulAbsorber": {
+    "NAME": "Soul Absorber",
+    "FLAVOR": "Take its soul without an attack.",
+    "DESCRIPTIONS": [
+      "Whenever a non-minion enemy die from a non-attack damage , gain #b2 max HP."
+    ]
+  },
+  "AKDsMoreRelics:Cocktail": {
+    "NAME": "Cocktail",
+    "FLAVOR": "Just mix them all together!",
+    "DESCRIPTIONS": [
+      "At start of combat , trigger the effect of a random #ypotion . "
+    ]
+  },
+  "AKDsMoreRelics:Joker": {
+    "NAME": "Joker",
+    "FLAVOR": "Show your trump card at the last minute.",
+    "DESCRIPTIONS": [
+      "The last card in your hand will be played twice."
+    ]
+  },
+  "AKDsMoreRelics:PurifyingFlame": {
+    "NAME": "Purifying Flame",
+    "FLAVOR": "The holy and powerful flame will certainly purify your curses.",
+    "DESCRIPTIONS": [
+      "Whenever you #yRest, remove a random #yCurse from your deck."
+    ]
+  },
+  "AKDsMoreRelics:GoldMagnet": {
+    "NAME": "Gold Magnet",
+    "FLAVOR": "Treasures are buried everywhere!",
+    "DESCRIPTIONS": [
+      "Regular combats have a #b25% chance to drop a relic."
+    ]
+  },
+  "AKDsMoreRelics:PotionBackpack": {
+    "NAME": "Potion Backpack",
+    "FLAVOR": "Don't just discard your unwanted potions. Why not sell them?",
+    "DESCRIPTIONS": [
+      "Whenever you discard a potion , gain #b30 #yGold ."
+    ]
+  },
+  "AKDsMoreRelics:MagicHat": {
+    "NAME": "Magic Hat",
+    "FLAVOR": "How did you do that?",
+    "DESCRIPTIONS": [
+      "If you do not play any #yAttacks during your turn , #yRetain cards in your hand this turn."
+    ]
+  },
+  "AKDsMoreRelics:MagicWand": {
+    "NAME": "Magic Wand",
+    "FLAVOR": "How did you do that?",
+    "DESCRIPTIONS": [
+      "If you do not play any #yAttacks during your turn , draw #b2 extra cards next turn."
+    ]
+  },
+  "AKDsMoreRelics:PowerCrystal": {
+    "NAME": "Power Crystal",
+    "FLAVOR": "\"Power\" Crystal is surely helpful with Powers.",
+    "DESCRIPTIONS": [
+      "Cost of ALL #yPower cards reduced by #b1 ."
+    ]
+  },
+  "AKDsMoreRelics:BigSale": {
+    "NAME": "Big Sale",
+    "FLAVOR": "There are few people who'd like to buy potions , are there?",
+    "DESCRIPTIONS": [
+      "Potions in shop cost #b1 #yGold . (Doesn't affect extra potions when you have #yCourier)"
+    ]
+  },
+  "AKDsMoreRelics:AED": {
+    "NAME": "AED",
+    "FLAVOR": "Be careful when you are trying to trigger this......",
+    "DESCRIPTIONS": [
+      "If your HP is not more than #b3 at the end of combat, heal all of your HP."
+    ]
+  },
+  "AKDsMoreRelics:Wrench": {
+    "NAME": "Wrench",
+    "FLAVOR": "\"Equipment repairment and maintenance\"",
+    "DESCRIPTIONS": [
+      "At the start of each combat , temporary #yupgrade cards in your hand."
+    ]
+  },
+  "AKDsMoreRelics:HolographicShield": {
+    "NAME": "Holographic Shield",
+    "FLAVOR": "Can this shield really block damage?",
+    "DESCRIPTIONS": [
+      "At the start of each turn , gain #yBlock equal to #b1 + the number of turns."
+    ]
+  },
+  "AKDsMoreRelics:Invincible": {
+    "NAME": "\"Invincible\"",
+    "FLAVOR": "An amulet in the shape of Corrupt Heart , the invincible ruler of the spire.",
+    "DESCRIPTIONS": [
+      "You lose at most #b20/30 #y(Non-Elite/Elite #yor #yBoss) HP every turn."
+    ]
+  },
+  "AKDsMoreRelics:HeavySpear": {
+    "NAME": "Heavy Spear",
+    "FLAVOR": "Overkill.",
+    "DESCRIPTIONS": [
+      "Whenever you deal attack damage that is not less than half of target's max HP , kill it instantly."
+    ]
+  },
+  "AKDsMoreRelics:SpringGloves": {
+    "NAME": "Spring Gloves",
+    "FLAVOR": "The more the spring compresses, the heavier the punch is.",
+    "DESCRIPTIONS": [
+      "If you do not play any #yAttacks during your turn , gain #b6 #ytemorary #yStrength next turn."
+    ]
+  },
+  "AKDsMoreRelics:GiftCard": {
+    "NAME": "Gift Card",
+    "FLAVOR": "Buy one , get two free!",
+    "DESCRIPTIONS": [
+      "Set the prices of the other two relics in shop to #b0 ."
+    ]
+  },
+  "AKDsMoreRelics:Garlic": {
+    "NAME": "Garlic",
+    "FLAVOR": "It stinks!",
+    "DESCRIPTIONS": [
+      "At the first turn of each combat , negate ALL #yDEBUFFs."
+    ]
+  },
+  "AKDsMoreRelics:DeathReaper": {
+    "NAME": "Death Reaper",
+    "FLAVOR": "You wouldn't like to meet its owner.",
+    "DESCRIPTIONS": [
+      "You deals #b120% attack damage to enemies whose HP is below #b50% ."
+    ]
+  },
+  "AKDsMoreRelics:DeathCountdown": {
+    "NAME": "Death Countdown",
+    "FLAVOR": "The bell of Death will toll soon......",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. At the end of turn 8 , receive #b99999 damage."
+    ]
+  },
+  "AKDsMoreRelics:UnknownPotion": {
+    "NAME": "Unknown Potion",
+    "FLAVOR": "You have a stomachache after drinking this potion.",
+    "DESCRIPTIONS": [
+      "At the start of turn, gain [E] , gain #b2 #ypoison ( #b60% ) and gain #b2 #yregen ( #b30% )."
+    ]
+  },
+  "AKDsMoreRelics:GlassCrown": {
+    "NAME": "Glass Crown",
+    "FLAVOR": "Protect the fragile Crown , and you will gain infinite honor and wealth.",
+    "DESCRIPTIONS": [
+      "If you didn't take any unblocked attack damage in a combat , #yUpgrade a random card , gain #b5 max HP and #b30 #yGold ."
+    ]
+  },
+  "AKDsMoreRelics:BottledTsunami": {
+    "NAME": "Bottled Tsunami",
+    "FLAVOR": "You can hear the tsunami runs toward you......",
+    "DESCRIPTIONS": [
+      "Upon pickup , choose a card. It will return to draw pile after played.",
+      " will return to draw pile after played.",
+      "Choose a card for "
+    ]
+  },
+  "AKDsMoreRelics:SkeletonMask": {
+    "NAME": "Skeleton Mask",
+    "FLAVOR": "Take away weak souls.",
+    "DESCRIPTIONS": [
+      "At end of turn , instantly kill enemies whose HP is below #b8 ."
+    ]
+  },
+  "AKDsMoreRelics:Milk": {
+    "NAME": "Milk",
+    "FLAVOR": "A cup of Cappuccino, please.",
+    "DESCRIPTIONS": [
+      "When you use a potion in combat , gain #b1 #yStrength and #b1 #yDexterity ."
+    ]
+  },
+  "AKDsMoreRelics:TowerShield": {
+    "NAME": "Tower Shield",
+    "FLAVOR": "Build your defence before your enemy attacks.",
+    "DESCRIPTIONS": [
+      "Whenever enemies gain #yBlock , gain equal #yBlock next turn."
+    ]
+  },
+  "AKDsMoreRelics:HypnoticWatch": {
+    "NAME": "Hypnotic Watch",
+    "FLAVOR": "Time for a nap.",
+    "DESCRIPTIONS": [
+      "Once every combat , if you don't play any card in your turn , #ystun ALL enemies this turn."
+    ]
+  },
+  "AKDsMoreRelics:HeroBiography": {
+    "NAME": "Hero Biography",
+    "FLAVOR": "What an exciting book! But the story is too short.",
+    "DESCRIPTIONS": [
+      "At the start of your turn , if there's any #yPower cards in draw pile , discard pile or hand , gain [E] ."
+    ]
+  },
+  "AKDsMoreRelics:ElixirOfLife": {
+    "NAME": "Elixir Of Life",
+    "FLAVOR": "Want to live forever? Also works for robots!",
+    "DESCRIPTIONS": [
+      "Upon pickup , increase your max HP by #b50% . Start each combat with #b4 #yRegen."
+    ]
+  },
+  "AKDsMoreRelics:ColorlessHeart": {
+    "NAME": "Colorless Heart",
+    "FLAVOR": "This pale-looking heart has a strong vitality.",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yUncommon or #yRare #yColorless card , #yexhaust it and heal #b3 HP."
+    ]
+  },
+  "AKDsMoreRelics:GoldenLance": {
+    "NAME": "Golden Lance",
+    "FLAVOR": "The best defence is attack.",
+    "DESCRIPTIONS": [
+      "If all cards in your hand are #yAttack , your Attacks deal double damage."
+    ]
+  },
+  "AKDsMoreRelics:BadgeOfSimplicity": {
+    "NAME": "Badge Of Simplicity",
+    "FLAVOR": "There's nothing on it. Simple.",
+    "DESCRIPTIONS": [
+      "The first time you play \"Strike\" or \"Defend\" each turn, gain [E] ."
+    ]
+  },
+  "AKDsMoreRelics:GhostCloak": {
+    "NAME": "Ghost Cloak",
+    "FLAVOR": "Thin and ethereal.",
+    "DESCRIPTIONS": [
+      "Once per turn, if you receive #b2 unblocked attack damage in a turn , gain #b1 #yIntangible immediately."
+    ]
+  },
+  "AKDsMoreRelics:FangNecklace": {
+    "NAME": "Fang Necklace",
+    "FLAVOR": "Don't hurt your self while wearing this. It's poisoned.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever you take unblocked attack damage , gain #b1 #yPoison ."
+    ]
+  },
+  "AKDsMoreRelics:AutobotHelper": {
+    "NAME": "Autobot Helper",
+    "FLAVOR": "Feeling busy? Try this automatic helper!",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn, and automatically play the rightmost card in your hand (cost #b1 less energy)."
+    ]
+  },
+  "AKDsMoreRelics:SpikeShield": {
+    "NAME": "Spike Shield",
+    "FLAVOR": "Never attack a shield with spikes on it.",
+    "DESCRIPTIONS": [
+      "Whenever you block attack damage from an enemy , deal equal damage to damage source."
+    ]
+  },
+  "AKDsMoreRelics:BottledSnowflake": {
+    "NAME": "Bottled Snowflake",
+    "FLAVOR": "The last snow before the blight turn them all red.",
+    "DESCRIPTIONS": [
+      "Upon pickup , choose a card. It is free to play once every combat.",
+      " free to play once every combat.",
+      "Choose a card for "
+    ]
+  },
+  "AKDsMoreRelics:BloodyDagger": {
+    "NAME": "Bloody Dagger",
+    "FLAVOR": "There's a thirst for revenge in it.",
+    "DESCRIPTIONS": [
+      "Once per turn , when you receive unblocked attack damage , gain #b6 #yVigor ."
+    ]
+  },
+  "AKDsMoreRelics:BerserkerBadge": {
+    "NAME": "Berserker Badge",
+    "FLAVOR": "Awarded to warriors who are not afraid of pain and go forward bravely.",
+    "DESCRIPTIONS": [
+      "If last room was #yCombat , gain #b2 #yStrength in this combat."
+    ]
+  },
+  "AKDsMoreRelics:EchoConch": {
+    "NAME": "Echo Conch",
+    "FLAVOR": "If you listen closely, you can hear the ocean.",
+    "DESCRIPTIONS": [
+      "At the end of turn , you can select a card to move from #ydiscard #ypile to #ydraw #ypile ."
+    ]
+  },
+  "AKDsMoreRelics:IcosahedronDice": {
+    "NAME": "Icosahedron Dice",
+    "FLAVOR": "V-E+F=2",
+    "DESCRIPTIONS": [
+      "After #b20 turns (accumulative between combats) , gain a random #yRare #yRelic after that combat and lose effect."
+    ]
+  },
+  "AKDsMoreRelics:DonuAndDeca": {
+    "NAME": "Donu and Deca",
+    "FLAVOR": "\"The greatest work I've ever done.\" - The Architect",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of odd turns. Draw #b1 extra card at even turns."
+    ]
+  },
+  "AKDsMoreRelics:SpeedyHand": {
+    "NAME": "Speedy Hand",
+    "FLAVOR": "Grab them all!",
+    "DESCRIPTIONS": [
+      "You can add ALL #b3 cards in a card reward to your deck and #yupgrade them.",
+      "Grab them ALL!"
+    ]
+  },
+  "AKDsMoreRelics:MagicOintment": {
+    "NAME": "Magic Ointment",
+    "FLAVOR": "It can relieve your pain, but it can't really cure your wound.",
+    "DESCRIPTIONS": [
+      "When obtained, heal #b25 HP and set its #ycounter to your current HP. At the end of combat, if your HP is lower than its #ycounter, restore HP to #ycounter and set #ycounter to the HP before recovery."
+    ]
+  },
+  "AKDsMoreRelics:BlastShield": {
+    "NAME": "Blast Shield",
+    "FLAVOR": "Once it's broken , it will release huge energy.",
+    "DESCRIPTIONS": [
+      "Whenever you lose ALL #yBlock because of enemy's attack, deal #b8 damage to ALL enemies."
+    ]
+  },
+  "AKDsMoreRelics:TimeMachine": {
+    "NAME": "Time Machine",
+    "FLAVOR": "Back to the golden age......",
+    "DESCRIPTIONS": [
+      "Right click to record your current HP. Right click again to change your HP back later. Can be used only once."
+    ]
+  },
+  "AKDsMoreRelics:AscendersBadge": {
+    "NAME": "Ascenders Badge",
+    "FLAVOR": "The changes of the spire won't stop you from climbing higher.",
+    "DESCRIPTIONS": [
+      "Remove #rAscender's #rBane in your deck."
+    ]
+  },
+  "AKDsMoreRelics:RuneOfHorror": {
+    "NAME": "Rune Of Horror",
+    "FLAVOR": "While you are afraid of your enemies, your enemies are also afraid of you.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, enemies who don't intend to #yAttack lose #b1 #yStrength ."
+    ]
+  },
+  "AKDsMoreRelics:EnergySaver": {
+    "NAME": "Energy Saver",
+    "FLAVOR": "Don't waste your energy!",
+    "DESCRIPTIONS": [
+      "Gain [E] after you play a #yX-cost card."
+    ]
+  },
+  "AKDsMoreRelics:GoldAnvil": {
+    "NAME": "Gold Anvil",
+    "FLAVOR": "Best anvil to forge the best weapons.",
+    "DESCRIPTIONS": [
+      "Whenever you #yupgrade a card at campfire, #yupgrade another random card in your deck."
+    ]
+  },
+  "AKDsMoreRelics:CurseTorch": {
+    "NAME": "Curse Torch",
+    "FLAVOR": "No extinguishing, no discard, NO REFUNDS! HAHAHA!",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yCurse , draw #b2 extra card."
+    ]
+  },
+  "AKDsMoreRelics:Telescope": {
+    "NAME": "Telescope",
+    "FLAVOR": "You can see the stars clearly through the fog around the spire.",
+    "DESCRIPTIONS": [
+      "Once per combat , right click to #yScry #b5 ."
+    ]
+  },
+  "AKDsMoreRelics:CurseStaff": {
+    "NAME": "Curse Staff",
+    "FLAVOR": "Once belonged to the most notorious wizard in the spire.",
+    "DESCRIPTIONS": [
+      "Add #b2 #rNecronomicurse to deck. Whenever you draw a #rNecronomicurse , gain [E] and draw #b1 extra card."
+    ]
+  },
+  "AKDsMoreRelics:BluePellets": {
+    "NAME": "Blue Pellets",
+    "FLAVOR": "These are in fact small bombs disguised as pellets.",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower, #yAttack, and #ySkill in the same turn, remove enemies' #yBlock and #yArtifact."
+    ]
+  },
+  "AKDsMoreRelics:FlameBoots": {
+    "NAME": "Flame Boots",
+    "FLAVOR": "Ignite the combat with your speed!",
+    "DESCRIPTIONS": [
+      "After you play the 6th card in a turn, gain #b4 #ytemporary #yStrength this turn."
+    ]
+  },
+  "AKDsMoreRelics:OverclockedChip": {
+    "NAME": "Overclocked Chip",
+    "FLAVOR": "It has a large but unstable power.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Cards that cost #b2 or more have #yEthereal."
+    ]
+  },
+  "AKDsMoreRelics:BouncyBall": {
+    "NAME": "Bouncy Ball",
+    "FLAVOR": "Fly upward, and bounce on the ceiling!",
+    "DESCRIPTIONS": [
+      "For every card you try to draw while your hand is full, gain #b3 #yBlock instead."
+    ]
+  },
+  "AKDsMoreRelics:OakBarrel": {
+    "NAME": "Oak Barrel",
+    "FLAVOR": "Life was like a cask full of mixed potions, you never know what potion you are gonna get.",
+    "DESCRIPTIONS": [
+      "Upon pickup, gain #b1 potion slot. Potions in combat rewards will always be #yEntropic #yBrew."
+    ]
+  },
+  "AKDsMoreRelics:Vintage": {
+    "NAME": "Vintage",
+    "FLAVOR": "The secret of best vintage is time.",
+    "DESCRIPTIONS": [
+      "If a potion stays in your potion slot for at least #b5 combats, double its effect.",
+      " #yVintage : Already #b",
+      " combats.",
+      " (double effect)"
+    ]
+  },
+  "AKDsMoreRelics:MagicEight": {
+    "NAME": "Magic Eight",
+    "FLAVOR": "ASK AGAIN LATER",
+    "DESCRIPTIONS": [
+      "The 8th card from the left in your hand always costs #b0."
+    ]
+  },
+  "AKDsMoreRelics:SolidTime": {
+    "NAME": "Solid Time",
+    "FLAVOR": "A cube glittering with strange light.",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yPower in your deck, lose #b6 #yMax #yHP and remove it from your deck. NL Automatically trigger the effect of the card at the start of every combat. ",
+      " NL Powers to trigger: "
+    ]
+  },
+  "AKDsMoreRelics:HolyStatue": {
+    "NAME": "Holy Statue",
+    "FLAVOR": "You feel blessed after praying before the statue.",
+    "DESCRIPTIONS": [
+      "At the start of the next #b3 combats, #yupgrade ALL your cards. You can reset the number to #b3 at campfire.",
+      "Pray",
+      "At the start of the next 3 combats, upgrade ALL your cards."
+    ]
+  },
+  "AKDsMoreRelics:Quill": {
+    "NAME": "Quill",
+    "FLAVOR": "The words written by this quill are fluorescent. You wonder what ink it uses.",
+    "DESCRIPTIONS": [
+      "At the end of turn, you can select a #yPower in your hand to #yRetain, and reduce its cost by #b1.",
+      "retain and reduce cost by 1"
+    ]
+  },
+  "AKDsMoreRelics:HeartChain": {
+    "NAME": "Heart Chain",
+    "FLAVOR": "A contract with the Death.",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP for reasons other than this relic, prevent this damage and lose equal HP later at the end of your next turn."
+    ]
+  },
+  "AKDsMoreRelics:MedievalHelmet": {
+    "NAME": "Medieval Helmet",
+    "FLAVOR": "The helmet limits your view, so only wear it when in danger.",
+    "DESCRIPTIONS": [
+      "Right click to enable/disable: Your attacks deal #b1/3 less damage, but you gain #yBlock equals to #yunblocked damage."
+    ]
+  },
+  "AKDsMoreRelics:BloodBag": {
+    "NAME": "Blood Bag",
+    "FLAVOR": "Use this when bleeding is excessive.",
+    "DESCRIPTIONS": [
+      "If you lose at least #b20 HP in a combat, immediately gain #b20 #ytemporary #yHP this combat."
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+        "AKDsMoreRelics:StunGrenadePower": {
+                "NAME": "Stun Grenade",
+                "DESCRIPTIONS": ["Enemies' attack damage is reduced to #b0 ."]
+        },
+        "AKDsMoreRelics:JokerPower": {
+                "NAME": "Joker",
+                "DESCRIPTIONS": ["Your next card will be played twice."]
+        },
+        "AKDsMoreRelics:GoldenLancePower": {
+                "NAME": "Golden Lance",
+                "DESCRIPTIONS": ["You deal double attack damage."]
+        },
+        "AKDsMoreRelics:DeathReaperPower": {
+                "NAME": "Death Reaper",
+                "DESCRIPTIONS": ["Attack damage this enemy take is multiplied by #b120% ."]
+        },
+        "AKDsMoreRelics:HeartChainPower": {
+                "NAME": "Heart Chain",
+                "DESCRIPTIONS": ["Lose #b", " HP at the end of turn."]
+        },
+        "AKDsMoreRelics:MedievalHelmetPower": {
+                "NAME": "Medieval Helmet",
+                "DESCRIPTIONS": ["Your attacks deal #b1/3 less damage, but you gain #yBlock equals to #yunblocked damage."]
+        }
+}

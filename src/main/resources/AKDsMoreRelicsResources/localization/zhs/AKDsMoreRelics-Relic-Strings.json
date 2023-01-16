@@ -1,0 +1,490 @@
+{
+  "AKDsMoreRelics:StunGrenade": {
+    "NAME": "闪光弹",
+    "FLAVOR": "闪亮登场！",
+    "DESCRIPTIONS": [
+      "每场战斗的第一回合，所有敌人的攻击伤害降至 #b0 。"
+    ]
+  },
+  "AKDsMoreRelics:HugeHammer": {
+    "NAME": "巨锤",
+    "FLAVOR": "山崩地裂，一锤定音！",
+    "DESCRIPTIONS": [
+      "每场战斗限一次，当你在一回合内造成不少于 #b150点 #y未被格挡 的伤害时，令所有敌人 #y眩晕 一回合。"
+    ]
+  },
+  "AKDsMoreRelics:SoulAbsorber": {
+    "NAME": "摄魂之瓶",
+    "FLAVOR": "夺魂于无形之中。",
+    "DESCRIPTIONS": [
+      "当一个非爪牙的敌人死于非攻击伤害时，你获得 #b2 点生命上限。"
+    ]
+  },
+  "AKDsMoreRelics:Cocktail": {
+    "NAME": "鸡尾酒",
+    "FLAVOR": "全部混在一起就好了！",
+    "DESCRIPTIONS": [
+      "战斗开始时，触发随机一种 #y药水 的效果。"
+    ]
+  },
+  "AKDsMoreRelics:Joker": {
+    "NAME": "鬼牌",
+    "FLAVOR": "我还留了一手！",
+    "DESCRIPTIONS": [
+      "当你打出最后一张手牌时，将其打出 #b2 次。"
+    ]
+  },
+  "AKDsMoreRelics:PurifyingFlame": {
+    "NAME": "净化之焰",
+    "FLAVOR": "经过这团火的洗礼，诅咒化为烟雾飘入空中......",
+    "DESCRIPTIONS": [
+      "当你在火堆 #y休息 时，随机移除你牌组中的一张 #y诅咒 。"
+    ]
+  },
+  "AKDsMoreRelics:GoldMagnet": {
+    "NAME": "吸金磁",
+    "FLAVOR": "寻常的地方也有可能埋藏着宝物！",
+    "DESCRIPTIONS": [
+      "普通战斗现在有 #b25% 的概率掉落遗物。"
+    ]
+  },
+  "AKDsMoreRelics:PotionBackpack": {
+    "NAME": "药水背包",
+    "FLAVOR": "不需要的药水可以拿去卖掉，虽然你卖不到那么贵。",
+    "DESCRIPTIONS": [
+      "当你丢弃一瓶药水时，获得 #b30 #y金币 。"
+    ]
+  },
+  "AKDsMoreRelics:MagicHat": {
+    "NAME": "魔术帽",
+    "FLAVOR": "这是怎么做到的？",
+    "DESCRIPTIONS": [
+      "若你在一回合内没有打出过攻击牌，该回合保留你的手牌。"
+    ]
+  },
+  "AKDsMoreRelics:MagicWand": {
+    "NAME": "魔术杖",
+    "FLAVOR": "这是怎么做到的？",
+    "DESCRIPTIONS": [
+      "若你在一回合内没有打出过攻击牌，下回合额外抽 #b2 张牌。"
+    ]
+  },
+  "AKDsMoreRelics:PowerCrystal": {
+    "NAME": "水晶之心",
+    "FLAVOR": "蕴含着无尽能量的蓝色水晶。",
+    "DESCRIPTIONS": [
+      "所有能力牌费用减少 #b1 。"
+    ]
+  },
+  "AKDsMoreRelics:BigSale": {
+    "NAME": "大甩卖",
+    "FLAVOR": "药水滞销，帮帮我们！",
+    "DESCRIPTIONS": [
+      "商店药水的价格变为 #b1 #y金币 。(不影响 #y送货员 补货的药水)"
+    ]
+  },
+  "AKDsMoreRelics:AED": {
+    "NAME": "AED",
+    "FLAVOR": "在死亡的边缘疯狂试探————",
+    "DESCRIPTIONS": [
+      "若战斗结束时你的生命值不超过 #b3 点，回复所有生命。"
+    ]
+  },
+  "AKDsMoreRelics:Wrench": {
+    "NAME": "扳手",
+    "FLAVOR": "\"设备维护：修理，校准和保养。\"",
+    "DESCRIPTIONS": [
+      "战斗开始时， #y升级 你的所有手牌。"
+    ]
+  },
+  "AKDsMoreRelics:HolographicShield": {
+    "NAME": "全息护盾",
+    "FLAVOR": "这个护盾的充能速度似乎有点慢......",
+    "DESCRIPTIONS": [
+      "每回合开始时，获得 回合数 #b+1 点 #y格挡 。"
+    ]
+  },
+  "AKDsMoreRelics:Invincible": {
+    "NAME": "\"坚不可摧\"",
+    "FLAVOR": "一个腐化之心形状的挂坠，让你感觉充满了邪恶的力量。",
+    "DESCRIPTIONS": [
+      "你在一回合内不会失去超过 #b20/30 #y(普通/精英或Boss) 点生命值。"
+    ]
+  },
+  "AKDsMoreRelics:HeavySpear": {
+    "NAME": "重枪",
+    "FLAVOR": "深入骨髓，一击毙命！",
+    "DESCRIPTIONS": [
+      "若你一次攻击对一个敌人造成了不少于其最大生命值一半的伤害，直接将其击杀。"
+    ]
+  },
+  "AKDsMoreRelics:SpringGloves": {
+    "NAME": "弹簧拳套",
+    "FLAVOR": "缩的越紧，打的越重。",
+    "DESCRIPTIONS": [
+      "若你在一回合内未打出攻击牌，下回合获得 #b6 点 #y临时力量 。"
+    ]
+  },
+  "AKDsMoreRelics:GiftCard": {
+    "NAME": "礼品卡",
+    "FLAVOR": "买一送二！",
+    "DESCRIPTIONS": [
+      "立即将商店中除此遗物以外的遗物价格变为 0 。"
+    ]
+  },
+  "AKDsMoreRelics:Garlic": {
+    "NAME": "大蒜",
+    "FLAVOR": "闻起来真臭。",
+    "DESCRIPTIONS": [
+      "每场战斗的第一回合，免疫所有负面效果。"
+    ]
+  },
+  "AKDsMoreRelics:DeathReaper": {
+    "NAME": "死神镰刀",
+    "FLAVOR": "让人感到脊背发凉。",
+    "DESCRIPTIONS": [
+      "攻击生命值不高于最大生命值一半的敌人时造成 #b120% 伤害。"
+    ]
+  },
+  "AKDsMoreRelics:DeathCountdown": {
+    "NAME": "死亡倒计时",
+    "FLAVOR": "死亡的钟声即将敲响......",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。第8回合结束时，受到 #b99999 点伤害。"
+    ]
+  },
+  "AKDsMoreRelics:UnknownPotion": {
+    "NAME": "不明药剂",
+    "FLAVOR": "喝下这管\"体力强化药剂\"后你感觉有些肚子疼。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] ，并有 #b60% 的概率获得 #b2 层 #y中毒 ， #b30% 的概率获得 #b2 层 #y再生 。"
+    ]
+  },
+  "AKDsMoreRelics:GlassCrown": {
+    "NAME": "玻璃王冠",
+    "FLAVOR": "能完好保存这顶王冠的人将获得无尽的财富和荣耀。",
+    "DESCRIPTIONS": [
+      "若你在一场战斗中未受到任何未被格挡的攻击伤害，随机 #y升级 一张卡，获得 #b5 点最大生命值以及 #b30 #y金币 。"
+    ]
+  },
+  "AKDsMoreRelics:BottledTsunami": {
+    "NAME": "瓶装海啸",
+    "FLAVOR": "你听见瓶中的波涛正向你奔涌而来......",
+    "DESCRIPTIONS": [
+      "拾取时选择一张牌，这张牌打出后将会回到抽牌堆。",
+      " 打出后将会回到抽牌堆。",
+      "选择一张牌装入"
+    ]
+  },
+  "AKDsMoreRelics:SkeletonMask": {
+    "NAME": "骷髅面具",
+    "FLAVOR": "带走即将消逝的灵魂。",
+    "DESCRIPTIONS": [
+      "回合结束时，所有生命值小于等于 #b8 的敌人将直接死亡。"
+    ]
+  },
+  "AKDsMoreRelics:Milk": {
+    "NAME": "牛奶",
+    "FLAVOR": "来一杯卡布奇诺。",
+    "DESCRIPTIONS": [
+      "当你在战斗中使用药水时，额外获得 #b1 点 #y力量 和 #b1 点 #y敏捷 。"
+    ]
+  },
+  "AKDsMoreRelics:TowerShield": {
+    "NAME": "塔盾",
+    "FLAVOR": "敌人的消极攻击给了你摆好架势的机会。",
+    "DESCRIPTIONS": [
+      "敌人获得 #y格挡 时，你在下回合获得等量 #y格挡 。"
+    ]
+  },
+  "AKDsMoreRelics:HypnoticWatch": {
+    "NAME": "催眠怀表",
+    "FLAVOR": "是时候小睡一会了。",
+    "DESCRIPTIONS": [
+      "每场战斗限一次，若你在一回合内未打出任何牌，所有敌人眩晕一回合。"
+    ]
+  },
+  "AKDsMoreRelics:HeroBiography": {
+    "NAME": "英雄传记",
+    "FLAVOR": "振奋人心的一本书！但是这么快就读完了有点可惜。",
+    "DESCRIPTIONS": [
+      "每回合开始时，若抽牌堆，弃牌堆或手牌中存在能力牌，获得 [E] 。"
+    ]
+  },
+  "AKDsMoreRelics:ElixirOfLife": {
+    "NAME": "长生不老药",
+    "FLAVOR": "青春永驻，长生不老。对机器人也生效！",
+    "DESCRIPTIONS": [
+      "拾取时最大生命值增加 #b50% 。战斗开始时，获得 #b4 层 #y再生 。"
+    ]
+  },
+  "AKDsMoreRelics:ColorlessHeart": {
+    "NAME": "无色之心",
+    "FLAVOR": "这颗心虽然看着很苍白，但生命力无比旺盛。",
+    "DESCRIPTIONS": [
+      "打出 #y罕见 或 #y稀有 无色牌时回复 #b3 点生命 , 并 #y消耗 该牌 。"
+    ]
+  },
+  "AKDsMoreRelics:GoldenLance": {
+    "NAME": "黄金骑枪",
+    "FLAVOR": "进攻就是最好的防守。",
+    "DESCRIPTIONS": [
+      "当你的手牌只有攻击牌时，你造成的攻击伤害翻倍。"
+    ]
+  },
+  "AKDsMoreRelics:BadgeOfSimplicity": {
+    "NAME": "质朴证章",
+    "FLAVOR": "这枚徽章上什么都没有。够质朴。",
+    "DESCRIPTIONS": [
+      "你每回合第一次打出打击或防御时，获得 [E] 。"
+    ]
+  },
+  "AKDsMoreRelics:GhostCloak": {
+    "NAME": "幽灵披风",
+    "FLAVOR": "薄如蝉翼，虚无缥缈。",
+    "DESCRIPTIONS": [
+      "每回合限一次，若你在一回合内受到 #b2 次未被格挡的攻击伤害，立即获得 #b1 层 #y无实体 。"
+    ]
+  },
+  "AKDsMoreRelics:FangNecklace": {
+    "NAME": "毒刺项链",
+    "FLAVOR": "原始部落的酋长戴的项链。小心别扎到自己。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。每当你受到未被格挡的攻击伤害 , 获得 #b1 层 #y中毒 。"
+    ]
+  },
+  "AKDsMoreRelics:SpikeShield": {
+    "NAME": "刺盾",
+    "FLAVOR": "永远不要试图去攻击一面带刺的盾。",
+    "DESCRIPTIONS": [
+      "当敌人的攻击被 #y格挡 时，敌人受到被 #y格挡 的攻击伤害。"
+    ]
+  },
+  "AKDsMoreRelics:BottledSnowflake": {
+    "NAME": "瓶装雪花",
+    "FLAVOR": "荒疫前最后一片未被染红的雪花。",
+    "DESCRIPTIONS": [
+      "拾取时选择一张牌，这张牌每场战斗第一次打出时耗能为 #b0 。",
+      " 第一次打出时耗能为 #b0 。",
+      "选择一张牌装入"
+    ]
+  },
+  "AKDsMoreRelics:AutobotHelper": {
+    "NAME": "全自动机器帮手",
+    "FLAVOR": "看起来不是很聪明的样子......",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] ，并耗费比原来少 #b1 的费用自动打出手牌最右边的牌。"
+    ]
+  },
+  "AKDsMoreRelics:BloodyDagger": {
+    "NAME": "染血匕首",
+    "FLAVOR": "这把匕首中蕴含着复仇的渴望。",
+    "DESCRIPTIONS": [
+      "每回合你第一次受到未被格挡的伤害时，获得 #b6 点 #y活力 。"
+    ]
+  },
+  "AKDsMoreRelics:BerserkerBadge": {
+    "NAME": "狂战士证章",
+    "FLAVOR": "授予那些不惧伤痛，勇往直前的勇士。",
+    "DESCRIPTIONS": [
+      "若你在上一个房间经历了战斗，在这次战斗中获得 #b2 点 #y力量 。"
+    ]
+  },
+  "AKDsMoreRelics:EchoConch": {
+    "NAME": "回响海螺",
+    "FLAVOR": "靠近听，可以听到海的声音。",
+    "DESCRIPTIONS": [
+      "回合结束时，你可以选择一张牌从 #y弃牌堆 移到 #y抽牌堆 。"
+    ]
+  },
+  "AKDsMoreRelics:IcosahedronDice": {
+    "NAME": "二十面骰",
+    "FLAVOR": "V-E+F=2",
+    "DESCRIPTIONS": [
+      "累计战斗 #b20 回合后(战斗之间继承)，在该场战斗结束时获得一个随机 #y稀有遗物 ，然后本遗物失效。"
+    ]
+  },
+  "AKDsMoreRelics:DonuAndDeca": {
+    "NAME": "甜圈与八体",
+    "FLAVOR": "\"我有史以来最了不起的杰作。\"——建筑师",
+    "DESCRIPTIONS": [
+      "在奇数回合开始时获得 [E] , 偶数回合开始时多抽 #b1 张牌。"
+    ]
+  },
+  "AKDsMoreRelics:SpeedyHand": {
+    "NAME": "极速之手",
+    "FLAVOR": "好快の手！",
+    "DESCRIPTIONS": [
+      "获得卡牌奖励时，你可以选择获得其中所有卡牌并将它们 #y升级 。",
+      "手快全拿！"
+    ]
+  },
+  "AKDsMoreRelics:MagicOintment": {
+    "NAME": "魔力药膏",
+    "FLAVOR": "可以止痛，却不能真正治好你的伤......",
+    "DESCRIPTIONS": [
+      "拾取时立即回复 #b25 生命值，并将 #y计数 设为你的当前生命值。战斗结束时，若你的生命值低于该遗物的 #y计数 ，将生命值回复到 #y计数 并将 #y计数 设为回复前的生命值。"
+    ]
+  },
+  "AKDsMoreRelics:BlastShield": {
+    "NAME": "爆裂护盾",
+    "FLAVOR": "一旦被击破，就会释放出巨大能量。",
+    "DESCRIPTIONS": [
+      "当你由于敌人攻击而失去所有 #y格挡 时，对所有敌人造成 #b8 点伤害。"
+    ]
+  },
+  "AKDsMoreRelics:TimeMachine": {
+    "NAME": "时光机",
+    "FLAVOR": "重返光辉岁月。",
+    "DESCRIPTIONS": [
+      "右键点击以记录当前 #y生命值 ，之后你可以通过再次右键该遗物恢复到记录的 #y生命值。 NL 使用一次后此遗物失效。"
+    ]
+  },
+  "AKDsMoreRelics:AscendersBadge": {
+    "NAME": "进阶之证",
+    "FLAVOR": "尖塔发生的灾变无法阻拦你前进的步伐。",
+    "DESCRIPTIONS": [
+      "拾取时，移除你的 #r进阶之灾 。(仅在卡组有此牌时有可能出现)"
+    ]
+  },
+  "AKDsMoreRelics:RuneOfHorror": {
+    "NAME": "恐惧符文",
+    "FLAVOR": "令弱小的敌人闻风丧胆。",
+    "DESCRIPTIONS": [
+      "你的回合结束时， #y意图 不为攻击的敌人失去 #b1 点 #y力量 。"
+    ]
+  },
+  "AKDsMoreRelics:EnergySaver": {
+    "NAME": "节能瓶",
+    "FLAVOR": "不要滥用，不要浪费。",
+    "DESCRIPTIONS": [
+      "你打出一张耗能为 X 的牌后，获得 [E] 。"
+    ]
+  },
+  "AKDsMoreRelics:GoldAnvil": {
+    "NAME": "金砧",
+    "FLAVOR": "最好的砧才能锻造出最好的武器。",
+    "DESCRIPTIONS": [
+      "当你在火堆 #y升级 一张牌时，随机 #y升级 你牌组中另一张牌。"
+    ]
+  },
+  "AKDsMoreRelics:CurseTorch": {
+    "NAME": "诅咒火把",
+    "FLAVOR": "无法熄灭，无法丢弃，无法退货！哈哈哈！",
+    "DESCRIPTIONS": [
+      "当你抽到 #y诅咒 时，再抽 #b2 张牌。"
+    ]
+  },
+  "AKDsMoreRelics:Telescope": {
+    "NAME": "天文望远镜",
+    "FLAVOR": "透过环绕尖塔的迷雾，你可以清楚地看到夜晚的星象。",
+    "DESCRIPTIONS": [
+      "每场战斗限一次，右键点击来 #y预见 #b5 。"
+    ]
+  },
+  "AKDsMoreRelics:CurseStaff": {
+    "NAME": "诅咒法杖",
+    "FLAVOR": "尖塔最臭名昭著的死灵术士曾使用的法杖。",
+    "DESCRIPTIONS": [
+      "拾取时获得 #b2 张 #r死灵诅咒。 你抽到 #r死灵诅咒 时，获得 [E] 并再抽 #b1 张牌。"
+    ]
+  },
+  "AKDsMoreRelics:BluePellets": {
+    "NAME": "蓝色药丸",
+    "FLAVOR": "实际上是伪装成药丸的腐蚀炸弹。",
+    "DESCRIPTIONS": [
+      "当你在一回合内打出 #y攻击 ， #y技能 ， #y能力 各一张后，清除敌人的所有 #y格挡 和 #y人工制品 。"
+    ]
+  },
+  "AKDsMoreRelics:FlameBoots": {
+    "NAME": "火焰靴",
+    "FLAVOR": "用速度点燃战斗！",
+    "DESCRIPTIONS": [
+      "你在一回合内打出第 #b6 张牌后，本回合获得 #b4 点 #y临时力量 。"
+    ]
+  },
+  "AKDsMoreRelics:OverclockedChip": {
+    "NAME": "超频芯片",
+    "FLAVOR": "能量巨大，但看起来不太稳定......",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。所有(原始)费用大于等于 #b2 的牌获得 #y虚无 。"
+    ]
+  },
+  "AKDsMoreRelics:BouncyBall": {
+    "NAME": "弹力球",
+    "FLAVOR": "向上飞，然后撞在天花板上反弹!",
+    "DESCRIPTIONS": [
+      "手牌数已达到上限时，每抽一张卡就获得 #b4 点 #y格挡 。"
+    ]
+  },
+  "AKDsMoreRelics:OakBarrel": {
+    "NAME": "木桶",
+    "FLAVOR": "能装不少药水，但是你不知道装的是什么药水。",
+    "DESCRIPTIONS": [
+      "拾取时获得 #b1 个药水栏位。战斗结束后掉落的药水都变为 #y混沌药水 。"
+    ]
+  },
+  "AKDsMoreRelics:Vintage": {
+    "NAME": "陈年佳酿",
+    "FLAVOR": "封瓶入窖成佳品。",
+    "DESCRIPTIONS": [
+      "若你持有某一瓶药水经过至少 #b5 场战斗，该药水效果翻倍。(不叠加)",
+      " #y陈年佳酿 ：已经经过了 #b",
+      " 场战斗。",
+      " (效果翻倍)"
+    ]
+  },
+  "AKDsMoreRelics:MagicEight": {
+    "NAME": "魔力八",
+    "FLAVOR": "过一会再问一遍",
+    "DESCRIPTIONS": [
+      "你手牌中左数第 #b8 张牌耗能固定为 #b0 。"
+    ]
+  },
+  "AKDsMoreRelics:SolidTime": {
+    "NAME": "固态时间",
+    "FLAVOR": "闪烁着奇异光辉的立方体。",
+    "DESCRIPTIONS": [
+      "当你打出你牌组中的 #y能力牌 时， #r失去 #b6 点 #y最大生命值 并将其移出你的牌组(如果你的 #y最大生命值 大于 #b6 )，每场战斗开始时自动触发被移除的牌的效果。",
+      " NL 触发的能力牌："
+    ]
+  },
+  "AKDsMoreRelics:HolyStatue": {
+    "NAME": "神圣雕像",
+    "FLAVOR": "敬拜这座雕像后，你受到了祝福。",
+    "DESCRIPTIONS": [
+      "接下来 #b3 场战斗开始时， #y升级 你牌组中的所有牌。在火堆处你可以选择重置此遗物的效果。",
+      "敬拜",
+      "接下来 3 场战斗开始时，升级你牌组中的所有牌。"
+    ]
+  },
+  "AKDsMoreRelics:Quill": {
+    "NAME": "羽毛笔",
+    "FLAVOR": "写出的字带有荧光。你很好奇用的是什么墨水。",
+    "DESCRIPTIONS": [
+      "回合结束时，你可以选择 #y保留 你手牌中的一张能力牌并使其耗能减少 #b1 。",
+      "保留并使耗能减少 1 (羽毛笔)"
+    ]
+  },
+  "AKDsMoreRelics:HeartChain": {
+    "NAME": "生命锁链",
+    "FLAVOR": "与死神签订的契约。",
+    "DESCRIPTIONS": [
+      "当你在战斗中因 除此遗物以外的原因 失去生命时，改为在下次回合结束时再失去等量生命。"
+    ]
+  },
+  "AKDsMoreRelics:MedievalHelmet": {
+    "NAME": "中世纪头盔",
+    "FLAVOR": "虽然坚固但影响视野，所以只有在危险时才会将面部遮住。",
+    "DESCRIPTIONS": [
+      "右键来启用/关闭：你造成的攻击伤害降低 #b1/3 ，造成伤害时你获得等同于 #y未被格挡 伤害的 #y格挡 。"
+    ]
+  },
+  "AKDsMoreRelics:BloodBag": {
+    "NAME": "应急血包",
+    "FLAVOR": "失血过多时使用。",
+    "DESCRIPTIONS": [
+      "若你在一场战斗中损失了至少 #b20 点生命值，本场战斗立即获得 #b20 点 #y临时生命值 。"
+    ]
+  }
+}
