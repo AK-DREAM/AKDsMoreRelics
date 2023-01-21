@@ -27,9 +27,7 @@ public class PowerCrystal extends CustomRelic {
     public void atBattleStartPreDraw() {
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
             if (c.type == AbstractCard.CardType.POWER && c.cost > 0 && !CardModifierManager.hasModifier(c, "AKDsMoreRelics:PowerCrystalModifier")) {
-                c.cost = c.cost-1;
-                if (c.costForTurn > c.cost) c.costForTurn = c.cost;
-                c.isCostModified = true;
+                c.modifyCostForCombat(-1);
                 CardModifierManager.addModifier(c, new PowerCrystalModifier());
             }
         }
@@ -39,9 +37,7 @@ public class PowerCrystal extends CustomRelic {
     public void onDrawOrDiscard() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.POWER && c.cost > 0 && !CardModifierManager.hasModifier(c, "AKDsMoreRelics:PowerCrystalModifier")) {
-                c.cost = c.cost-1;
-                if (c.costForTurn > c.cost) c.costForTurn = c.cost;
-                c.isCostModified = true;
+                c.modifyCostForCombat(-1);
                 CardModifierManager.addModifier(c, new PowerCrystalModifier());
             }
         }

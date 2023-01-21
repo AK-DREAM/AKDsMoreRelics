@@ -486,5 +486,19 @@
     "DESCRIPTIONS": [
       "若你在一场战斗中损失了至少 #b20 点生命值，本场战斗立即获得 #b20 点 #y临时生命值 。"
     ]
+  },
+  "AKDsMoreRelics:Firecracker": {
+    "NAME": "爆竹",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "你对一名敌人造成伤害时，对另外一名随机敌人造成该伤害的一半。"
+    ]
+  },
+  "AKDsMoreRelics:XXX": {
+    "NAME": "XXX",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "每当你获得 #y格挡 时，少获得 #b1 点而改为获得 #b1 点 #y临时生命值 。"
+    ]
   }
 }
