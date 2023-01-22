@@ -489,16 +489,23 @@
   },
   "AKDsMoreRelics:Firecracker": {
     "NAME": "爆竹",
-    "FLAVOR": "",
+    "FLAVOR": "噼啪砰！",
     "DESCRIPTIONS": [
       "你对一名敌人造成伤害时，对另外一名随机敌人造成该伤害的一半。"
+    ]
+  },
+  "AKDsMoreRelics:RabbitLantern": {
+    "NAME": "兔子灯笼",
+    "FLAVOR": "用于庆祝某个传统节日的装饰。",
+    "DESCRIPTIONS": [
+      "每当你获得 #y格挡 时，少获得 #b1 点格挡而改为获得 #b1 点 #y临时生命值 。"
     ]
   },
   "AKDsMoreRelics:XXX": {
     "NAME": "XXX",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "每当你获得 #y格挡 时，少获得 #b1 点而改为获得 #b1 点 #y临时生命值 。"
+      "你打出一张牌时，若抽牌堆,手牌,弃牌堆中有同名牌，将它们的复制分别打出一次，然后将此牌消耗。"
     ]
   }
 }

@@ -23,8 +23,8 @@ public class Firecracker extends CustomRelic {
 
     public static final String ID = DefaultMod.makeID("Firecracker");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("default.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("default.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("Firecracker.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Firecracker.png"));
 
     public Firecracker() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
@@ -46,10 +46,13 @@ public class Firecracker extends CustomRelic {
     public static class DeathReaperPatch1 {
         @SpireInsertPatch(rloc = 13)
         public static void Insert(AbstractMonster mo, DamageInfo info) {
+            if (!AbstractDungeon.player.hasRelic("AKDsMoreRelics:Firecracker")) return;
             if (info.owner != AbstractDungeon.player || info.output < 2 || info.type == DamageInfo.DamageType.HP_LOSS) return;
             int dmg = info.output/2;
             AbstractMonster mo2 = AbstractDungeon.getRandomMonster(mo);
             if (mo2 != null) {
+                AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(mo2,
+                        AbstractDungeon.player.getRelic("AKDsMoreRelics:Firecracker")));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(mo2,
                         new DamageInfo(AbstractDungeon.player, dmg, DamageInfo.DamageType.THORNS),
                         AbstractGameAction.AttackEffect.BLUNT_LIGHT));

@@ -484,7 +484,28 @@
     "NAME": "Blood Bag",
     "FLAVOR": "Use this when bleeding is excessive.",
     "DESCRIPTIONS": [
-      "If you lose at least #b20 HP in a combat, immediately gain #b20 #ytemporary #yHP this combat."
+      "If you lose at least #b20 HP in a combat, immediately gain #b20 #yTemporary #yHP this combat."
+    ]
+  },
+  "AKDsMoreRelics:Firecracker": {
+    "NAME": "Firecracker",
+    "FLAVOR": "Crackle Boom!",
+    "DESCRIPTIONS": [
+      "Whenever you deal damage to an enemy, deal half the damage to another random enemy."
+    ]
+  },
+  "AKDsMoreRelics:RabbitLantern": {
+    "NAME": "Rabbit Lantern",
+    "FLAVOR": "A decoration to celebrate a traditional festival.",
+    "DESCRIPTIONS": [
+      "Whenever you gain #yBlock, gain #b1 less #yBlock but gain #b1 #yTemporary #yHP."
+    ]
+  },
+  "AKDsMoreRelics:XXX": {
+    "NAME": "XXX",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "你打出一张牌时，若抽牌堆,手牌,弃牌堆中有同名牌，将它们的复制分别打出一次，然后将此牌消耗。"
     ]
   }
 }
