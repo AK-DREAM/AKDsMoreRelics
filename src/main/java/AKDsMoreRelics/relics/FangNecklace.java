@@ -43,7 +43,7 @@ public class FangNecklace extends CustomRelic {
     @Override
     public int onAttacked(DamageInfo info, int dmg) {
         AbstractPlayer p = AbstractDungeon.player;
-        if (dmg > 0 && info.type == DamageInfo.DamageType.NORMAL) {
+        if (dmg > 0 && info.type == DamageInfo.DamageType.NORMAL && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             this.flash();
             this.addToBot(new ApplyPowerAction(p, p, new PoisonPower(p, p, 1)));
         }

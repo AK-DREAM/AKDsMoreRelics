@@ -7,6 +7,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -15,6 +16,8 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.MonsterGroup;
+import com.megacrit.cardcrawl.random.Random;
 
 import static AKDsMoreRelics.DefaultMod.makeRelicOutlinePath;
 import static AKDsMoreRelics.DefaultMod.makeRelicPath;
@@ -43,7 +46,7 @@ public class Firecracker extends CustomRelic {
                     DamageInfo.class
             }
     )
-    public static class DeathReaperPatch1 {
+    public static class FirecrackerPatch1 {
         @SpireInsertPatch(rloc = 13)
         public static void Insert(AbstractMonster mo, DamageInfo info) {
             if (!AbstractDungeon.player.hasRelic("AKDsMoreRelics:Firecracker")) return;
@@ -57,6 +60,24 @@ public class Firecracker extends CustomRelic {
                         new DamageInfo(AbstractDungeon.player, dmg, DamageInfo.DamageType.THORNS),
                         AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             }
+        }
+    }
+
+    @SpirePatch(
+            clz = MonsterGroup.class,
+            method = "getRandomMonster",
+            paramtypez = {
+                    AbstractMonster.class,
+                    boolean.class,
+                    Random.class
+            }
+    )
+    public static class FirecrackerPatch2 {
+        @SpireInsertPatch(rloc = 245-218)
+        public static SpireReturn<AbstractMonster> Insert(MonsterGroup __, AbstractMonster mo, boolean aliveOnly, Random rng) {
+            if (__.monsters.size() == 1 && mo != null && __.monsters.get(0) == mo) {
+                return SpireReturn.Return(null);
+            } else return SpireReturn.Continue();
         }
     }
 }

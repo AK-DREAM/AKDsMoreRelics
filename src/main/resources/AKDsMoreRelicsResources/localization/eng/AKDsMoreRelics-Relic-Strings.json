@@ -225,6 +225,13 @@
       "Whenever you play a #yUncommon or #yRare #yColorless card , #yexhaust it and heal #b3 HP."
     ]
   },
+  "AKDsMoreRelics:DustOfLife": {
+    "NAME": "Dust Of Life",
+    "FLAVOR": "After this magical plant turns into dust, a new seedling will grow out of it.",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yUncommon or #yRare #yColorless card , #yexhaust it and heal #b3 HP."
+    ]
+  },
   "AKDsMoreRelics:GoldenLance": {
     "NAME": "Golden Lance",
     "FLAVOR": "The best defence is attack.",
@@ -501,11 +508,11 @@
       "Whenever you gain #yBlock, gain #b1 less #yBlock but gain #b1 #yTemporary #yHP."
     ]
   },
-  "AKDsMoreRelics:XXX": {
-    "NAME": "XXX",
-    "FLAVOR": "",
+  "AKDsMoreRelics:StoneOfResonance": {
+    "NAME": "Stone Of Resonance",
+    "FLAVOR": "One of the only two identical stones in the world.",
     "DESCRIPTIONS": [
-      "你打出一张牌时，若抽牌堆,手牌,弃牌堆中有同名牌，将它们的复制分别打出一次，然后将此牌消耗。"
+      "Whenever you play a card, if there are same cards that hasn't been #yexhausted , play their copy separately once and #yexhaust the card you played in the first place."
     ]
   }
 }

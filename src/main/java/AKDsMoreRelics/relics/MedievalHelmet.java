@@ -79,7 +79,7 @@ public class MedievalHelmet extends CustomRelic implements ClickableRelic {
     public static class MedievalHelmetPatch {
         @SpireInsertPatch( locator = Locator.class )
         public static void Insert(AbstractMonster __instance, DamageInfo info) {
-            if (AbstractDungeon.player.hasPower("AKDsMoreRelics:MedievalHelmetPower")) {
+            if (AbstractDungeon.player.hasPower("AKDsMoreRelics:MedievalHelmetPower") && info.type == DamageInfo.DamageType.NORMAL) {
                 AbstractDungeon.actionManager.addToBottom(
                         new GainBlockAction(AbstractDungeon.player, __instance.lastDamageTaken));
             }

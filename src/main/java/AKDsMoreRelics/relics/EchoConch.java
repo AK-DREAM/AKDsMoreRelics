@@ -1,6 +1,7 @@
 package AKDsMoreRelics.relics;
 
 import AKDsMoreRelics.DefaultMod;
+import AKDsMoreRelics.actions.MyMoveCardsAction;
 import AKDsMoreRelics.util.TextureLoader;
 import basemod.AutoAdd;
 import basemod.abstracts.CustomRelic;
@@ -39,7 +40,7 @@ public class EchoConch extends CustomRelic {
     public void onPlayerEndTurn() {
         AbstractPlayer p = AbstractDungeon.player;
         this.flash();
-        this.addToBot(new MoveCardsAction(p.drawPile, p.discardPile, 1));
+        this.addToBot(new MyMoveCardsAction(p.drawPile, p.discardPile, 1, false));
     }
 
     @Override

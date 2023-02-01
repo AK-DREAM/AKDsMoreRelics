@@ -225,6 +225,13 @@
       "打出 #y罕见 或 #y稀有 无色牌时回复 #b3 点生命 , 并 #y消耗 该牌 。"
     ]
   },
+  "AKDsMoreRelics:DustOfLife": {
+    "NAME": "生命之尘",
+    "FLAVOR": "这种神奇的植物化成灰后，又会有一株新的幼苗从其中长出来。",
+    "DESCRIPTIONS": [
+      "打出 #y罕见 或 #y稀有 无色牌时回复 #b3 点生命 , 并 #y消耗 该牌 。"
+    ]
+  },
   "AKDsMoreRelics:GoldenLance": {
     "NAME": "黄金骑枪",
     "FLAVOR": "进攻就是最好的防守。",
@@ -501,11 +508,11 @@
       "每当你获得 #y格挡 时，少获得 #b1 点格挡而改为获得 #b1 点 #y临时生命值 。"
     ]
   },
-  "AKDsMoreRelics:XXX": {
-    "NAME": "XXX",
-    "FLAVOR": "",
+  "AKDsMoreRelics:StoneOfResonance": {
+    "NAME": "共鸣之石",
+    "FLAVOR": "世界上仅有的一对完全一样的石头的其中一块。",
     "DESCRIPTIONS": [
-      "你打出一张牌时，若抽牌堆,手牌,弃牌堆中有同名牌，将它们的复制分别打出一次，然后将此牌消耗。"
+      "你打出一张牌时，若你还有未被 #y消耗 的同名牌，将它们的复制分别打出一次，然后将开始时打出的牌 #y消耗 。"
     ]
   }
 }
