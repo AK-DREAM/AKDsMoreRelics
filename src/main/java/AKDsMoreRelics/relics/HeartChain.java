@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import static AKDsMoreRelics.DefaultMod.makeRelicOutlinePath;
 import static AKDsMoreRelics.DefaultMod.makeRelicPath;
@@ -42,8 +43,10 @@ public class HeartChain extends CustomRelic implements BetterOnLoseHpRelic {
 
     @Override
     public int betterOnLoseHp(DamageInfo info, int dmg) {
+        if (AbstractDungeon.getCurrRoom().phase != AbstractRoom.RoomPhase.COMBAT) return dmg;
         if (info.owner != virtualMonster) {
             AbstractPlayer p = AbstractDungeon.player;
+            this.flash();
             this.addToTop(new ApplyPowerAction(p, p, new HeartChainPower(p, p, dmg)));
             return 0;
         } else return dmg;

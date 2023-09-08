@@ -23,33 +23,19 @@ public class SpringGloves extends CustomRelic {
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("SpringGloves.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("SpringGloves.png"));
-    private boolean OK = false;
     public SpringGloves() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.FLAT);
     }
 
-    @Override
-    public void atTurnStart() {
-        if (this.OK) {
-            AbstractPlayer p = AbstractDungeon.player;
-            this.flash(); this.addToBot(new RelicAboveCreatureAction(p, this));
-            this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 6)));
-            this.addToBot(new ApplyPowerAction(p, p, new LoseStrengthPower(p, 6)));
-        }
-        this.beginPulse();
-        this.OK = this.pulse = true;
-    }
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.type == AbstractCard.CardType.ATTACK) {
-            this.OK = this.pulse = false;
+        AbstractPlayer p = AbstractDungeon.player;
+        if (card.type == AbstractCard.CardType.SKILL) {
+            this.flash();
+            this.addToTop(new ApplyPowerAction(p, p, new VigorPower(p, 2)));
         }
     }
 
-    @Override
-    public void onVictory() {
-        this.OK = this.pulse = false;
-    }
     // Description
     @Override
     public String getUpdatedDescription() {

@@ -11,10 +11,16 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
+import com.megacrit.cardcrawl.ui.buttons.SingingBowlButton;
+import javassist.*;
+import javassist.expr.ExprEditor;
+import javassist.expr.MethodCall;
+import org.lwjgl.Sys;
 
 import java.util.ArrayList;
 
@@ -29,7 +35,7 @@ public class SpeedyHand extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("SpeedyHand.png"));
 
     public SpeedyHand() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
     }
 
     // Description
@@ -39,61 +45,36 @@ public class SpeedyHand extends CustomRelic {
     }
 
     public static SpeedyHandButton SHB = new SpeedyHandButton();
-    // 1
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "update",
-            paramtypez = {}
-    )
-    public static class SpeedyHandPatchPatch1 {
-        @SpireInsertPatch( rloc = 10, localvars = {} )
-        public static void Insert(CardRewardScreen c) { SHB.hide(); }
+
+    @SpirePatch(clz = CardCrawlGame.class, method = "<ctor>")
+    public static class SpeedyHandPatch {
+        public static void Raw(CtBehavior ctBehavior) throws NotFoundException, CannotCompileException {
+            ClassPool pool = ctBehavior.getDeclaringClass().getClassPool();
+            CtClass screen = pool.get(CardRewardScreen.class.getName());
+            CtMethod methods[] = screen.getDeclaredMethods();
+            for (CtMethod method : methods) {
+                method.instrument(new ExprEditor() {
+                    public void edit(MethodCall m) throws CannotCompileException {
+                        if (m.getClassName().equals(SingingBowlButton.class.getName()) && m.getMethodName().equals("hide")) {
+                            m.replace("{" + SpeedyHand.class.getName() + ".SHB.hide();" + "$_ = $proceed($$);" + "}");
+                        }
+                    }
+                });
+            }
+        }
     }
-    // 2
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "update",
-            paramtypez = {}
-    )
+
+    @SpirePatch(clz = CardRewardScreen.class, method = "update")
     public static class SpeedyHandPatchPatch2 {
         @SpireInsertPatch( rloc = 37, localvars = {} )
         public static void Insert(CardRewardScreen c) { SHB.update(); }
     }
-    // 3
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "cardSelectUpdate",
-            paramtypez = {}
-    )
-    public static class SpeedyHandPatchPatch3 {
-        @SpireInsertPatch( rloc = 32, localvars = {} )
-        public static void Insert(CardRewardScreen c) { SHB.hide(); }
-    }
-    // 4
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "render",
-            paramtypez = {SpriteBatch.class}
-    )
+    @SpirePatch(clz = CardRewardScreen.class, method = "render")
     public static class SpeedyHandPatchPatch4 {
         @SpireInsertPatch( rloc = 5, localvars = {} )
         public static void Insert(CardRewardScreen c, SpriteBatch sb) { SHB.render(sb); }
     }
-    // 5
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "reopen",
-            paramtypez = {}
-    )
-    public static class SpeedyHandPatchPatch5 {
-        public static void Prefix(CardRewardScreen c) { SHB.hide(); }
-    }
-    // 6
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "reopen",
-            paramtypez = {}
-    )
+    @SpirePatch(clz = CardRewardScreen.class, method = "reopen")
     public static class SpeedyHandPatchPatch6 {
         @SpireInsertPatch( rlocs = {19,26}, localvars = {} )
         public static void Insert(CardRewardScreen c) {
@@ -102,16 +83,7 @@ public class SpeedyHand extends CustomRelic {
             }
         }
     }
-    // 7
-    @SpirePatch(
-            clz = CardRewardScreen.class,
-            method = "open",
-            paramtypez = {
-                    ArrayList.class,
-                    RewardItem.class,
-                    String.class
-            }
-    )
+    @SpirePatch(clz = CardRewardScreen.class, method = "open")
     public static class SpeedyHandPatchPatch7 {
         @SpireInsertPatch( rloc = 19, localvars = {} )
         public static void Insert(CardRewardScreen c, ArrayList<AbstractCard> a1, RewardItem a2, String a3) {

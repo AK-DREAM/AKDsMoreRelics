@@ -22,7 +22,7 @@ public class RuneOfHorror extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("RuneOfHorror.png"));
 
     public RuneOfHorror() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
     }
 
     @Override

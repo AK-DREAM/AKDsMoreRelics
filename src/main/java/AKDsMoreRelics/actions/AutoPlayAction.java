@@ -39,6 +39,7 @@ public class AutoPlayAction extends AbstractGameAction {
                 if (card.costForTurn > 0 && !card.freeToPlay() && !card.isInAutoplay && (!p.hasPower("Corruption") || card.type != AbstractCard.CardType.SKILL)) {
                     p.energy.use(card.costForTurn);
                 }
+                card.dontTriggerOnUseCard = true;
                 this.addToTop(new NewQueueCardAction(card, true, false, true));
                 AbstractDungeon.player.hand.removeCard(card);
                 AbstractDungeon.player.hand.refreshHandLayout();

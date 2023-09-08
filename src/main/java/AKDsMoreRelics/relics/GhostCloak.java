@@ -39,7 +39,7 @@ public class GhostCloak extends CustomRelic {
 
     @Override
     public int onAttacked(DamageInfo info, int dmg) {
-        if (dmg > 0 && info.type == DamageInfo.DamageType.NORMAL && this.counter != -1) {
+        if (dmg > 0 && info.type == DamageInfo.DamageType.NORMAL && this.counter != -1 && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             if ((--this.counter) == 0) {
                 this.flash();
                 this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));

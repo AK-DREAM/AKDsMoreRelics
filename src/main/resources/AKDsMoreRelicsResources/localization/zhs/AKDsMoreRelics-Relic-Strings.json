@@ -122,7 +122,7 @@
     "NAME": "弹簧拳套",
     "FLAVOR": "缩的越紧，打的越重。",
     "DESCRIPTIONS": [
-      "若你在一回合内未打出攻击牌，下回合获得 #b6 点 #y临时力量 。"
+      "每打出一张技能牌就获得 #b2 点 #y活力 。"
     ]
   },
   "AKDsMoreRelics:GiftCard": {
@@ -157,7 +157,7 @@
     "NAME": "不明药剂",
     "FLAVOR": "喝下这管\"体力强化药剂\"后你感觉有些肚子疼。",
     "DESCRIPTIONS": [
-      "每回合开始时获得 [E] ，并有 #b60% 的概率获得 #b2 层 #y中毒 ， #b30% 的概率获得 #b2 层 #y再生 。"
+      "每回合开始时获得 [E] ，并有 #b50% 的概率获得 #b2 层 #y中毒 ， #b30% 的概率获得 #b2 层 #y再生 。"
     ]
   },
   "AKDsMoreRelics:GlassCrown": {
@@ -400,7 +400,7 @@
     "NAME": "蓝色药丸",
     "FLAVOR": "实际上是伪装成药丸的腐蚀炸弹。",
     "DESCRIPTIONS": [
-      "当你在一回合内打出 #y攻击 ， #y技能 ， #y能力 各一张后，清除敌人的所有 #y格挡 和 #y人工制品 。"
+      "打出 #y能力 牌时，清除敌人的所有 #y格挡 和 #y人工制品 。"
     ]
   },
   "AKDsMoreRelics:FlameBoots": {
@@ -484,7 +484,7 @@
     "NAME": "中世纪头盔",
     "FLAVOR": "虽然坚固但影响视野，所以只有在危险时才会将面部遮住。",
     "DESCRIPTIONS": [
-      "右键来启用/关闭：你造成的攻击伤害降低 #b1/3 ，造成伤害时你获得等同于 #y未被格挡 伤害的 #y格挡 。"
+      "右键来启用/关闭：你造成的攻击伤害降低 #b1/2 ，造成伤害时你获得等同于 #y未被格挡 伤害的 #y格挡 。"
     ]
   },
   "AKDsMoreRelics:BloodBag": {
@@ -512,7 +512,49 @@
     "NAME": "共鸣之石",
     "FLAVOR": "世界上仅有的一对完全一样的石头的其中一块。",
     "DESCRIPTIONS": [
-      "你打出一张牌时，若你还有未被 #y消耗 的同名牌，将它们的复制分别打出一次，然后将开始时打出的牌 #y消耗 。"
+      "你打出一张牌时，若手牌中有同名牌，将此牌再打出一次。"
+    ]
+  },
+  "AKDsMoreRelics:GoldenApple": {
+    "NAME": "金苹果",
+    "FLAVOR": "世界上最美味的水果 —— 来尝尝吧！",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 #b4 点 #y临时生命值。 NL 你获得 #y最大生命值 时，获得量翻倍。"
+    ]
+  },
+  "AKDsMoreRelics:PhoneCall": {
+    "NAME": "电召服务",
+    "FLAVOR": "\"——好的，我在前面等你。记得带够钱！\"",
+    "DESCRIPTIONS": [
+      "右键点击以触发/取消：下一个问号必定是商店。 NL 拾取时获得 #b200 #y金币 。"
+    ]
+  },
+  "AKDsMoreRelics:PrimaryCombatManual": {
+    "NAME": "初级战斗手册",
+    "FLAVOR": "里面写了一些基本的战斗技巧。",
+    "DESCRIPTIONS": [
+      "所有 #y初始 或 #y普通 卡的伤害提升 #b3 点。"
+    ]
+  },
+  "AKDsMoreRelics:AdvancedCombatManual": {
+    "NAME": "进阶战斗手册",
+    "FLAVOR": "里面写了一些进阶的战斗技巧。",
+    "DESCRIPTIONS": [
+      "所有 #y罕见 或 #y稀有 卡的伤害提升 #b3 点。"
+    ]
+  },
+  "AKDsMoreRelics:Insight": {
+    "NAME": "\"顿悟\"",
+    "FLAVOR": "你明白了升级的本质。",
+    "DESCRIPTIONS": [
+      "打出一张牌后，将其在本场战斗中 #y升级 。"
+    ]
+  },
+  "AKDsMoreRelics:LongWhip": {
+    "NAME": "长鞭",
+    "FLAVOR": "来骗，来偷袭！",
+    "DESCRIPTIONS": [
+      "你对血量为满的敌人造成的攻击伤害翻倍。"
     ]
   }
 }

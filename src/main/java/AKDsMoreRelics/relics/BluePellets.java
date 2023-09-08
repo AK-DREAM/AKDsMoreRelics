@@ -58,7 +58,7 @@ public class BluePellets extends CustomRelic {
             POWER = true;
         }
 
-        if (ATTACK && SKILL && POWER) {
+        if (POWER) {
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {

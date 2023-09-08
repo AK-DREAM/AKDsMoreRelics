@@ -23,7 +23,7 @@ public class Joker extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Joker.png"));
 
     public Joker() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
     }
 
     @Override

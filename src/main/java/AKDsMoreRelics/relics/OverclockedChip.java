@@ -40,10 +40,16 @@ public class OverclockedChip extends CustomRelic {
     @Override
     public void onUnequip() { --AbstractDungeon.player.energy.energyMaster; }
 
+    public int getRealCost(AbstractCard c) {
+        AbstractCard c2 = c.makeCopy();
+        if (c.upgraded) c2.upgrade();
+        return c2.cost;
+    }
+
     @Override
     public void atBattleStartPreDraw() {
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if (c.cost >= 2 && !c.isEthereal && !CardModifierManager.hasModifier(c, "basemod:EtherealCardModifier")) {
+            if (getRealCost(c) >= 2 && !c.isEthereal && !CardModifierManager.hasModifier(c, "basemod:EtherealCardModifier")) {
                 CardModifierManager.addModifier(c, new EtherealMod());
             }
         }
@@ -51,7 +57,7 @@ public class OverclockedChip extends CustomRelic {
     @Override
     public void onDrawOrDiscard() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.cost >= 2 && !c.isEthereal && !CardModifierManager.hasModifier(c, "basemod:EtherealCardModifier")) {
+            if (getRealCost(c) >= 2 && !c.isEthereal && !CardModifierManager.hasModifier(c, "basemod:EtherealCardModifier")) {
                 CardModifierManager.addModifier(c, new EtherealMod());
             }
         }

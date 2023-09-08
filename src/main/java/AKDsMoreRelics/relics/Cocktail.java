@@ -8,10 +8,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PotionHelper;
-import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.potions.FairyPotion;
-import com.megacrit.cardcrawl.potions.LiquidMemories;
-import com.megacrit.cardcrawl.potions.SmokeBomb;
+import com.megacrit.cardcrawl.potions.*;
 
 import static AKDsMoreRelics.DefaultMod.makeRelicOutlinePath;
 import static AKDsMoreRelics.DefaultMod.makeRelicPath;
@@ -38,7 +35,7 @@ public class Cocktail extends CustomRelic {
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractPotion po = AbstractDungeon.returnRandomPotion(true);
-            while (po instanceof SmokeBomb || po instanceof FairyPotion || po instanceof LiquidMemories) {
+            while (po instanceof SmokeBomb || po instanceof FairyPotion || po instanceof LiquidMemories || po instanceof SneckoOil) {
                 po = AbstractDungeon.returnRandomPotion(true);
             }
             AbstractCreature target = AbstractDungeon.player;

@@ -122,7 +122,7 @@
     "NAME": "Spring Gloves",
     "FLAVOR": "The more the spring compresses, the heavier the punch is.",
     "DESCRIPTIONS": [
-      "If you do not play any #yAttacks during your turn , gain #b6 #ytemorary #yStrength next turn."
+      "Whenever you play a #ySkill, gain #b2 #yVigor."
     ]
   },
   "AKDsMoreRelics:GiftCard": {
@@ -400,7 +400,7 @@
     "NAME": "Blue Pellets",
     "FLAVOR": "These are in fact small bombs disguised as pellets.",
     "DESCRIPTIONS": [
-      "Whenever you play a #yPower, #yAttack, and #ySkill in the same turn, remove enemies' #yBlock and #yArtifact."
+      "Whenever you play a #yPower card, remove enemies' #yBlock and #yArtifact."
     ]
   },
   "AKDsMoreRelics:FlameBoots": {
@@ -484,7 +484,7 @@
     "NAME": "Medieval Helmet",
     "FLAVOR": "The helmet limits your view, so only wear it when in danger.",
     "DESCRIPTIONS": [
-      "Right click to enable/disable: Your attacks deal #b1/3 less damage, but you gain #yBlock equals to #yunblocked damage."
+      "Right click to enable/disable: Your attacks deal #b1/2 less damage, but you gain #yBlock equals to #yunblocked damage."
     ]
   },
   "AKDsMoreRelics:BloodBag": {
@@ -512,7 +512,49 @@
     "NAME": "Stone Of Resonance",
     "FLAVOR": "One of the only two identical stones in the world.",
     "DESCRIPTIONS": [
-      "Whenever you play a card, if there are same cards that hasn't been #yexhausted , play their copy separately once and #yexhaust the card you played in the first place."
+      "Whenever you play a card, if there is any same card in hand, play the card again."
+    ]
+  },
+  "AKDsMoreRelics:GoldenApple": {
+    "NAME": "Golden Apple",
+    "FLAVOR": "The most delicious fruit in the world -- Try one!",
+    "DESCRIPTIONS": [
+      "Gain #b4 #yTemporary #yHP at the start of combat. NL When you gain #yMax #yHP, the amount gained is doubled."
+    ]
+  },
+  "AKDsMoreRelics:PhoneCall": {
+    "NAME": "Phone Call",
+    "FLAVOR": "\"——Fine, I'll wait for you in front. Remember to bring your money!\"",
+    "DESCRIPTIONS": [
+      "Right click to trigger/cancel: Next ? room will be Shop. NL Gain #b200 #ygold upon pickup."
+    ]
+  },
+  "AKDsMoreRelics:Insight": {
+    "NAME": "\"Insight\"",
+    "FLAVOR": "You realized the essence of upgrading.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, #yupgrade it in this combat."
+    ]
+  },
+  "AKDsMoreRelics:PrimaryCombatManual": {
+    "NAME": "Primary Combat Manual",
+    "FLAVOR": "It contains some basic fighting skills.",
+    "DESCRIPTIONS": [
+      "All #yBasic and #yCommon cards deal #b3 additional damage."
+    ]
+  },
+  "AKDsMoreRelics:AdvancedCombatManual": {
+    "NAME": "Advanced Combat Manual",
+    "FLAVOR": "It contains some advanced fighting skills.",
+    "DESCRIPTIONS": [
+      "All #yUncommon and #yRare cards deal #b3 additional damage."
+    ]
+  },
+  "AKDsMoreRelics:LongWhip": {
+    "NAME": "Long Whip",
+    "FLAVOR": "A long-ranged melee weapon.",
+    "DESCRIPTIONS": [
+      "You deal double attack damage to enemies with full health."
     ]
   }
 }

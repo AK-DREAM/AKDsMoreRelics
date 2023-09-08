@@ -43,7 +43,7 @@ public class UnknownPotion extends CustomRelic {
         if (AbstractDungeon.miscRng.random(9) <= 2) {
             this.addToBot(new ApplyPowerAction(p, p, new RegenPower(p, 2)));
         }
-        if (AbstractDungeon.miscRng.random(9) <= 5) {
+        if (AbstractDungeon.miscRng.random(9) <= 4) {
             this.addToBot(new ApplyPowerAction(p, p, new PoisonPower(p, p, 2)));
         }
     }

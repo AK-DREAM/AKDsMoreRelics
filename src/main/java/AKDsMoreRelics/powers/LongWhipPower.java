@@ -13,19 +13,19 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class MedievalHelmetPower extends AbstractPower {
+public class LongWhipPower extends AbstractPower implements InvisiblePower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("MedievalHelmetPower");
+    public static final String POWER_ID = DefaultMod.makeID("LongWhipPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     // We create 2 new textures *Using This Specific Texture Loader* - an 84x84 image and a 32x32 one.
-    private static final Texture tex84 = TextureLoader.getTexture("AKDsMoreRelicsResources/images/powers/MedievalHelmetPower_84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("AKDsMoreRelicsResources/images/powers/MedievalHelmetPower_32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("AKDsMoreRelicsResources/images/powers/DeathReaperPower_84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("AKDsMoreRelicsResources/images/powers/DeathReaperPower_32.png");
 
-    public MedievalHelmetPower(final AbstractCreature owner, final AbstractCreature source) {
+    public LongWhipPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;
         ID = POWER_ID;
 
@@ -43,9 +43,9 @@ public class MedievalHelmetPower extends AbstractPower {
     }
 
     @Override
-    public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {
-        if (type == DamageInfo.DamageType.NORMAL) {
-            return damage/2;
+    public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
+        if (type == DamageInfo.DamageType.NORMAL && this.owner.currentHealth == this.owner.maxHealth) {
+            return Math.round(damage*2.0F);
         } else {
             return damage;
         }

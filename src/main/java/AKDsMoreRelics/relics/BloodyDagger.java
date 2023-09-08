@@ -30,7 +30,7 @@ public class BloodyDagger extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("BloodyDagger.png"));
 
     public BloodyDagger() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
     }
 
     public boolean used;
@@ -40,7 +40,7 @@ public class BloodyDagger extends CustomRelic {
 
     @Override
     public int onAttacked(DamageInfo info, int dmg) {
-        if (dmg > 0 && !used) {
+        if (dmg > 0 && !used && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             this.used = true;
