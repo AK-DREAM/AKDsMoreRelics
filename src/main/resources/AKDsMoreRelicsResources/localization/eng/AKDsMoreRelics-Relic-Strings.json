@@ -52,7 +52,7 @@
     "NAME": "Potion Backpack",
     "FLAVOR": "Don't just discard your unwanted potions. Why not sell them?",
     "DESCRIPTIONS": [
-      "Whenever you discard a potion , gain #b30 #yGold ."
+      "Whenever you use or discard a potion , gain #b30 #yGold ."
     ]
   },
   "AKDsMoreRelics:MagicHat": {
@@ -435,7 +435,7 @@
     "NAME": "Vintage",
     "FLAVOR": "The secret of best vintage is time.",
     "DESCRIPTIONS": [
-      "If a potion stays in your potion slot for at least #b5 combats, double its effect.",
+      "If a potion stays in your potion slot for at least #b5 floors, double its effect.",
       " #yVintage : Already #b",
       " combats.",
       " (double effect)"
