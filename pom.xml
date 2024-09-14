@@ -6,7 +6,7 @@
     <groupId>akdsmorerelics</groupId>
     <artifactId>AKDsMoreRelics</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>AKDream's More Relics</name>
-    <version>1.5.0</version>
+    <version>1.5.1</version>
     <description>AKDream's More Relics</description>
 
     <properties>
@@ -16,7 +16,7 @@
         <ModTheSpire.version>3.8.0</ModTheSpire.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
-        <Steam.path>C:\Program Files (x86)\Steam\steamapps</Steam.path>
+        <Steam.path>D:\SteamLibrary\steamapps</Steam.path>
     </properties>
 
     <dependencies>

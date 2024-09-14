@@ -52,7 +52,7 @@
     "NAME": "Potion Backpack",
     "FLAVOR": "Don't just discard your unwanted potions. Why not sell them?",
     "DESCRIPTIONS": [
-      "Whenever you discard a potion , gain #b30 #yGold ."
+      "Whenever you use or discard a potion , gain #b30 #yGold ."
     ]
   },
   "AKDsMoreRelics:MagicHat": {
@@ -101,7 +101,7 @@
     "NAME": "Holographic Shield",
     "FLAVOR": "Can this shield really block damage?",
     "DESCRIPTIONS": [
-      "At the start of each turn , gain #yBlock equal to #b1 + the number of turns."
+      "At the start of each turn , gain #yBlock equal to twice the current number of turns."
     ]
   },
   "AKDsMoreRelics:Invincible": {
@@ -330,7 +330,7 @@
     "NAME": "Magic Ointment",
     "FLAVOR": "It can relieve your pain, but it can't really cure your wound.",
     "DESCRIPTIONS": [
-      "When obtained, heal #b25 HP and set its #ycounter to your current HP. At the end of combat, if your HP is lower than its #ycounter, restore HP to #ycounter and set #ycounter to the HP before recovery."
+      "When obtained, heal #b30 HP and set its #ycounter to your current HP. At the end of combat, if your HP is lower than its #ycounter, restore HP to #ycounter and set #ycounter to the HP before recovery."
     ]
   },
   "AKDsMoreRelics:BlastShield": {
@@ -435,9 +435,9 @@
     "NAME": "Vintage",
     "FLAVOR": "The secret of best vintage is time.",
     "DESCRIPTIONS": [
-      "If a potion stays in your potion slot for at least #b5 combats, double its effect.",
+      "If a potion stays in your potion slot for at least #b5 floors, double its effect.",
       " #yVintage : Already #b",
-      " combats.",
+      " floor(s).",
       " (double effect)"
     ]
   },
@@ -526,7 +526,7 @@
     "NAME": "Phone Call",
     "FLAVOR": "\"——Fine, I'll wait for you in front. Remember to bring your money!\"",
     "DESCRIPTIONS": [
-      "Right click to trigger/cancel: Next ? room will be Shop. NL Gain #b200 #ygold upon pickup."
+      "Right click to trigger/cancel: Next ? room will be Shop. NL Gain #b150 #ygold upon pickup."
     ]
   },
   "AKDsMoreRelics:Insight": {
@@ -555,6 +555,20 @@
     "FLAVOR": "A long-ranged melee weapon.",
     "DESCRIPTIONS": [
       "You deal double attack damage to enemies with full health."
+    ]
+  },
+  "AKDsMoreRelics:BattleHorn": {
+    "NAME": "Battle Horn",
+    "FLAVOR": "Its sound can arouse one's fighting spirit.",
+    "DESCRIPTIONS": [
+      "If the first card you play in a turn is an Attack, gain [E] ."
+    ]
+  },
+  "AKDsMoreRelics:GoldenFork": {
+    "NAME": "Golden Fork",
+    "FLAVOR": "Eating with it is a luxury.",
+    "DESCRIPTIONS": [
+      "Whenever a non-minion enemy dies, gain #ygold equals to damage the enemy last taken ( at most #b25 )."
     ]
   }
 }

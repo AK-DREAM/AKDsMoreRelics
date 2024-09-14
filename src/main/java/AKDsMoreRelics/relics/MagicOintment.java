@@ -30,7 +30,7 @@ public class MagicOintment extends CustomRelic {
 
     @Override
     public void onEquip() {
-        AbstractDungeon.player.heal(25);
+        AbstractDungeon.player.heal(30);
         this.counter = AbstractDungeon.player.currentHealth;
     }
 

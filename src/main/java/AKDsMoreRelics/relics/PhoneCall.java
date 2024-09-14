@@ -35,7 +35,7 @@ public class PhoneCall extends CustomRelic implements ClickableRelic {
 
     @Override
     public void onEquip() {
-        AbstractDungeon.player.gainGold(200);
+        AbstractDungeon.player.gainGold(150);
     }
 
     @Override
