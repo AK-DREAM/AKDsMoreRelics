@@ -1,0 +1,26 @@
+{
+        "AKDsMoreRelics:StunGrenadePower": {
+                "NAME": "Светошумовая граната",
+                "DESCRIPTIONS": ["Урон врагов уменьшен до #b0 ."]
+        },
+        "AKDsMoreRelics:JokerPower": {
+                "NAME": "Джокер",
+                "DESCRIPTIONS": ["Ваша следующая карта будет разыграна дважды."]
+        },
+        "AKDsMoreRelics:GoldenLancePower": {
+                "NAME": "Золотая пика",
+                "DESCRIPTIONS": ["Ваши атаки наносят двойной урон."]
+        },
+        "AKDsMoreRelics:DeathReaperPower": {
+                "NAME": "Жнец смерти",
+                "DESCRIPTIONS": ["Атаки по этому врагу наносят #b120% урона."]
+        },
+        "AKDsMoreRelics:HeartChainPower": {
+                "NAME": "Цепи для сердцаHeart Chain",
+                "DESCRIPTIONS": ["Заберёт #b", " ОЗ в конце вашего хода."]
+        },
+        "AKDsMoreRelics:MedievalHelmetPower": {
+                "NAME": "Средневековый шлем",
+                "DESCRIPTIONS": ["Ваши атаки наносят на #b50% меньше урона, но вы получаете #yЗащиту в размере #yнезаблокированного урона."]
+        }
+}
