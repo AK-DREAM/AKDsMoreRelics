@@ -26,7 +26,7 @@ public class OakBarrel extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("OakBarrel.png"));
 
     public OakBarrel() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
     }
 
     @Override

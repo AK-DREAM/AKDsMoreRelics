@@ -5,6 +5,8 @@ import AKDsMoreRelics.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -25,31 +27,15 @@ public class HugeHammer extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.HEAVY);
     }
 
-    private boolean used;
-
-    @Override
-    public void atBattleStart() {
-        this.used = false;
-        this.counter = 0;
-    }
-
-    @Override
-    public void atTurnStart() {
-        this.counter = this.used?-1:0;
-    }
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (!this.used && info.owner == AbstractDungeon.player && target instanceof AbstractMonster) {
-            this.counter += damageAmount;
-        }
-        if (this.counter >= 150) {
-            for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                this.addToBot(new StunMonsterAction(m, AbstractDungeon.player));
-            }
+        if (info.owner == AbstractDungeon.player && target instanceof AbstractMonster && damageAmount >= 20) {
             this.flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            this.used = true; this.counter = -1;
+            this.addToBot(new DamageAction(target,
+                    new DamageInfo(null, 5, DamageInfo.DamageType.THORNS),
+                    AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
     }
 

@@ -42,7 +42,7 @@ public class GoldenFork extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("GoldenFork.png"));
 
     public GoldenFork() {
-        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.CLINK);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     public static HashMap<AbstractMonster, Integer> lastDamage = new HashMap<>();
@@ -51,7 +51,7 @@ public class GoldenFork extends CustomRelic {
         if (m.currentHealth == 0 && !m.halfDead && !m.hasPower(MinionPower.POWER_ID)) {
             this.flash();
             if (lastDamage.get(m) != null) {
-                AbstractDungeon.player.gainGold(Math.min(25, lastDamage.get(m)));
+                AbstractDungeon.player.gainGold(Math.min(20, lastDamage.get(m)));
             }
         }
     }

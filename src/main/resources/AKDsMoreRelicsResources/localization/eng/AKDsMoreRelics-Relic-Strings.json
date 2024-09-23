@@ -10,7 +10,7 @@
     "NAME": "Huge Hammer",
     "FLAVOR": "This is not an inflatable hammer!",
     "DESCRIPTIONS": [
-      "Once every combat, if you deal at least #b150 #yunblocked damage within one turn , #ystun ALL enemies this turn."
+      "When you deal at least #b20 #yunblocked damage at once to an enemy, deal an additional #b5 damage to it."
     ]
   },
   "AKDsMoreRelics:SoulAbsorber": {
@@ -101,7 +101,7 @@
     "NAME": "Holographic Shield",
     "FLAVOR": "Can this shield really block damage?",
     "DESCRIPTIONS": [
-      "At the start of each turn , gain #yBlock equal to twice the current number of turns."
+      "At the start of each turn , gain #yBlock equal to one plus the current number of turns."
     ]
   },
   "AKDsMoreRelics:Invincible": {
@@ -157,7 +157,7 @@
     "NAME": "Unknown Potion",
     "FLAVOR": "You have a stomachache after drinking this potion.",
     "DESCRIPTIONS": [
-      "At the start of turn, gain [E] , gain #b2 #ypoison ( #b60% ) and gain #b2 #yregen ( #b30% )."
+      "At the start of turn, gain [E] , gain #b2 #ypoison ( #b50% ) and gain #b2 #yregen ( #b30% )."
     ]
   },
   "AKDsMoreRelics:GlassCrown": {
@@ -540,14 +540,14 @@
     "NAME": "Primary Combat Manual",
     "FLAVOR": "It contains some basic fighting skills.",
     "DESCRIPTIONS": [
-      "All #yBasic and #yCommon cards deal #b3 additional damage."
+      "All #yBasic and #yCommon cards deal #b2 additional damage."
     ]
   },
   "AKDsMoreRelics:AdvancedCombatManual": {
     "NAME": "Advanced Combat Manual",
     "FLAVOR": "It contains some advanced fighting skills.",
     "DESCRIPTIONS": [
-      "All #yUncommon and #yRare cards deal #b3 additional damage."
+      "All #yUncommon and #yRare cards deal #b2 additional damage."
     ]
   },
   "AKDsMoreRelics:LongWhip": {
@@ -568,7 +568,7 @@
     "NAME": "Golden Fork",
     "FLAVOR": "Eating with it is a luxury.",
     "DESCRIPTIONS": [
-      "Whenever a non-minion enemy dies, gain #ygold equals to damage the enemy last taken ( at most #b25 )."
+      "Whenever a non-minion enemy dies, gain #ygold equals to damage the enemy last taken ( at most #b20 )."
     ]
   }
 }

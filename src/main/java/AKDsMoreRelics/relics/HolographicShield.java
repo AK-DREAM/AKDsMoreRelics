@@ -22,11 +22,11 @@ public class HolographicShield extends CustomRelic {
     }
 
     public void atBattleStart() {
-        this.counter = 2;
+        this.counter = 1;
     }
 
     public void atTurnStart() {
-        this.counter += 2;
+        this.counter += 1;
         this.flash();
         this.addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.counter));
     }

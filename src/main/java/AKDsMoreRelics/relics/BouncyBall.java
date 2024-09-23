@@ -26,7 +26,7 @@ public class BouncyBall extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("BouncyBall.png"));
 
     public BouncyBall() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
+        super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
     }
 
     // Description

@@ -6,7 +6,7 @@
     <groupId>akdsmorerelics</groupId>
     <artifactId>AKDsMoreRelics</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>AKDream's More Relics</name>
-    <version>1.5.1</version>
+    <version>1.5.2</version>
     <description>AKDream's More Relics</description>
 
     <properties>

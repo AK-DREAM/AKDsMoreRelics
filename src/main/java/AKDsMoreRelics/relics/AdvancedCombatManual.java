@@ -29,7 +29,7 @@ public class AdvancedCombatManual extends CustomRelic {
 
     @Override
     public float atDamageModify(float damage, AbstractCard c) {
-        return (c.rarity == AbstractCard.CardRarity.UNCOMMON || c.rarity == AbstractCard.CardRarity.RARE) ? damage + 3.0F : damage;
+        return (c.rarity == AbstractCard.CardRarity.UNCOMMON || c.rarity == AbstractCard.CardRarity.RARE) ? damage + 2.0F : damage;
     }
 
     // Description
