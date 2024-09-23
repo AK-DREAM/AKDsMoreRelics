@@ -351,7 +351,7 @@
     "NAME": "Ascenders Badge",
     "FLAVOR": "The changes of the spire won't stop you from climbing higher.",
     "DESCRIPTIONS": [
-      "Remove #rAscender's #rBane in your deck."
+      "Upon pickup, gain #b50 #ygold and remove #rAscender's #rBane from your deck."
     ]
   },
   "AKDsMoreRelics:RuneOfHorror": {
@@ -561,7 +561,7 @@
     "NAME": "Battle Horn",
     "FLAVOR": "Its sound can arouse one's fighting spirit.",
     "DESCRIPTIONS": [
-      "If the first card you play in a turn is an Attack, gain [E] ."
+      "Whenever you play an #yAttack , if it's one of the first two cards played this turn, gain [E] ."
     ]
   },
   "AKDsMoreRelics:GoldenFork": {

@@ -419,7 +419,9 @@ public class DefaultMod implements
         logger.info("You seeing this?");
         logger.info("Beginning to edit strings for mod with ID: " + getModID());
 
-        String lan = Settings.language == Settings.GameLanguage.ZHS ? "zhs" : "eng";
+        String lan = "eng";
+        if (Settings.language == Settings.GameLanguage.ZHS) lan = "zhs";
+        if (Settings.language == Settings.GameLanguage.RUS) lan = "rus";
 
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,

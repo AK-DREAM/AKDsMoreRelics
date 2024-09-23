@@ -39,6 +39,7 @@ public class AscendersBadge extends CustomRelic {
 
     @Override
     public void onEquip() {
+        AbstractDungeon.player.gainGold(50);
         AbstractCard rmv = null;
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
             if (c.cardID.equals("AscendersBane")) rmv = c;

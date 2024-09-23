@@ -32,7 +32,7 @@ public class BattleHorn extends CustomRelic {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1 && card.type == AbstractCard.CardType.ATTACK) {
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() <= 2 && card.type == AbstractCard.CardType.ATTACK) {
             this.flash();
             this.addToBot(new GainEnergyAction(1));
         }
